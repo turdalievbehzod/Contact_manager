@@ -9,8 +9,8 @@ cnt = Contact("test_user",+998942314354,"test_email@gmail.com")
 contacts = [cnt]
 
 def add_contact(s:list):
-    # name_check = r"^[a-z0-9_-]{3,15}$"
     name = input("Enter name: ")
+    # name_check = r"^[a-z0-9_-]{3,15}$"
     # while True:
     #     if re.match(name_check, name):
     #         break
@@ -99,5 +99,6 @@ def contact_manager(s:list):
             break
 
 contact_manager(contacts)
+
 
         
