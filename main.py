@@ -9,7 +9,14 @@ cnt = Contact("test_user",+998942314354,"test_email@gmail.com")
 contacts = [cnt]
 
 def add_contact(s:list):
+    name_check = r"^[a-z0-9_-]{3,15}$"
     name = input("enter name: ")
+    while True:
+        if re.match(name_check, name):
+            break
+        else:
+            print('something is incorrect, try again')
+            phone = input("Enter name: ")
     phone_check = r"^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$"
     phone = input("Enter phone number: ")
     while True:
